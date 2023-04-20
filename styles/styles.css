@@ -1,9 +1,52 @@
 /* ===== YOUR CSS GOES HERE ===== */
 /* ===== START WITH GLOBAL STYLES THEN USE MEDIA QUERIES FOR LAYOUT ADJUSTMENTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+html {
+	box-sizing: border-box;
+}
+*, 
+*:before, 
+*:after {
+	box-sizing: inherit;
+}
 
 body {
-    background: magenta;
+    background: #f3e9c0;
+    background-image: url();
+    color: #10193c;
+    font-family: 'Comfortaa', cursive;
 }
+
+header nav {
+    display: flex;
+    justify-content: center; space-between;
+    height: 10vh;
+    background-color: #8390fa;
+    }
+
+header ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+header .title {
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 2em;
+}
+    
+header .item {
+    justify-content: center;
+    align-items: center;
+    width: 100px; 
+    text-decoration: none; 
+}
+    
 p {
     font-size: 2em;
 }
+
+
