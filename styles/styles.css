@@ -86,6 +86,30 @@ nav ul li a:hover {
   border-radius: 12px;
 }
 
+@media screen and (max-width: 900px){
+  header nav {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 300px){
+  header nav {
+    width: 100%;
+  }
+  .logo{
+    justify-content: center;
+    height: 200px;
+  }
+  ul {
+    width: 400px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
 
 /* INTRO */ 
 
@@ -182,21 +206,17 @@ main {
 /* DISCOVER PAGE STYLE*/
   
 body#discoverpage section {
-    display: grid;
-    justify-content: center;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 body#discoverpage .container {
     display: grid;
+    height: 200vh;
     grid-auto-rows: 100px;
     grid-template-rows: repeat(3, 100px);
     grid-template-columns: repeat(2, 1fr);
-    margin: 2em;
-    min-width: 400px;
-    height: 200vh;
+    margin: 0 auto;
+    margin-top: 2em;
     grid-gap: 2px;
 }
 
@@ -214,6 +234,21 @@ body#discoverpage .container {
   
 }
 
+@media screen and (max-width:400px) {
+  .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (6, 200px);
+    grid-gap: 3px;
+}
+}
+
+@media screen and (max-width:900px) {
+  .container{
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .container .box p {
   font-size: 1em;
   text-transform: none;
@@ -228,14 +263,7 @@ body#discoverpage .container {
   border-radius: 12px;
 }
 
-@media screen and (max-width:500px) {
-  .container {
-    width: 100%;
-  }
-  .box {
-  width:100%;
-}
-}
+
 
 /* ABOUT PAGE STYLE*/
 
