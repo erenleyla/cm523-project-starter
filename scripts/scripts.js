@@ -101,14 +101,14 @@ function renderStep() {
     }
 }
 
-// Move to the next step
+
 function nextStep() {
     if (step < steps.length - 1) {
         step++;
         renderStep();
     }
 }
-// Move to the previous step
+
 function prevStep() {
     if (step > 0) {
         step--;
@@ -116,7 +116,7 @@ function prevStep() {
     }
 }
 
-// Select an option and re-render the step to apply the selected class
+
 function selectOption(option) {
     selections[step] = option;
     renderStep();
